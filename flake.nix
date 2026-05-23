@@ -128,6 +128,7 @@
               agenix.packages.${system}.default
               just
               nh
+              dix
             ];
           };
 
