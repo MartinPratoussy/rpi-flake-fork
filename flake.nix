@@ -112,7 +112,6 @@
                     forgejo = nativeAarch64Pkgs.forgejo;
                     adguardhome = nativeAarch64Pkgs.adguardhome;
                     cinny = nativeAarch64Pkgs.cinny;
-                    fio = nativeAarch64Pkgs.fio;
                   })
                 ];
               }

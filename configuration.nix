@@ -42,7 +42,6 @@
     btop
     wget
     kitty.terminfo
-    fio
     ripgrep
     fd
   ];
