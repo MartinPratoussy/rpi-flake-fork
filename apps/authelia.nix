@@ -170,10 +170,7 @@ in
 
             {
               domain = "status.${_domain_base}";
-              policy = "two_factor";
-              subject = [
-                "group:owner"
-              ];
+              policy = "bypass";
             }
 
             {
