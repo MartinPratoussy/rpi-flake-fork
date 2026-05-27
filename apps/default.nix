@@ -20,5 +20,6 @@
     ./otbr.nix
     ./matter.nix
     ./anubis.nix
+    ./gatus.nix
   ];
 }

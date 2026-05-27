@@ -283,6 +283,14 @@ in
       import custom_reverse_proxy localhost:3000
     '';
 
+    virtualHosts."https://status.${_domain_base}".extraConfig = ''
+      import authelia_auth
+      import common
+      import default_permissions
+
+      import custom_reverse_proxy localhost:3001
+    '';
+
     virtualHosts."https://cloud.${_domain_base}".extraConfig = ''
       import common
       # import default_permissions
