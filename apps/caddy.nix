@@ -49,6 +49,8 @@ in
       hash = "sha256-pDy4dGYAPGLB63nep2TP5dU69uRPZDASVbjVSr0/IF4=";
     };
 
+    enableReload = false;
+
     globalConfig = ''
       admin off
 
