@@ -47,7 +47,6 @@ in
           };
 
           encryption = {
-            allow = true;
             require = false;
             msc4190 = true;
           };
