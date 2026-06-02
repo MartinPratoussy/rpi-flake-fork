@@ -45,11 +45,6 @@
       flake = false;
     };
 
-    nixpkgs-patch-oxicloud-update = {
-      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/525385.patch";
-      flake = false;
-    };
-
     agenix = {
       url = "github:ryantm/agenix";
       inputs = {
