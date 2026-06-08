@@ -109,23 +109,6 @@
                     adguardhome = nativeAarch64Pkgs.adguardhome;
                     cinny = nativeAarch64Pkgs.cinny;
                   })
-                  (final: prev: {
-                    mautrix-meta = prev.mautrix-meta.overrideAttrs rec {
-                      version = "26.05.1";
-                      tag = "v0.2605.1";
-
-                      src = prev.fetchFromGitHub {
-                        owner = "mautrix";
-                        repo = "meta";
-                        inherit tag;
-                        hash = "sha256-x+em0NAJSbvwpHHhgD1qO+gcRYDMv/9XX4q9Sxfgfw4=";
-                      };
-
-                      vendorHash = "sha256-AtrnTNrQVr5tuflhl0KxVqgjEA9htHZthVJzj9aAT3I=";
-                    };
-
-                    services.mautrix-meta.package = final.mautrix-meta;
-                  })
                 ];
               }
             )
