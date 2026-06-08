@@ -22,10 +22,6 @@
       url = "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch";
       flake = false;
     };
-    nixpkgs-patch-fix-git-cross = {
-      url = "https://github.com/NixOS/nixpkgs/commit/7b0345a5d696320a9f8b9c960d9c12eef7e444ba.patch";
-      flake = false;
-    };
 
     # Depends on mypy patch and needs rework
     nixpkgs-patch-fix-python-hass-chip-wheels = {

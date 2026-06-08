@@ -172,18 +172,6 @@
         "url": "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch"
       }
     },
-    "nixpkgs-patch-fix-git-cross": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-J9Ls3wTeZS8SNTV/ANAZdr67rHAPrqTfksRUT8qt/RU=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/commit/7b0345a5d696320a9f8b9c960d9c12eef7e444ba.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/commit/7b0345a5d696320a9f8b9c960d9c12eef7e444ba.patch"
-      }
-    },
     "nixpkgs-patch-fix-matter-server": {
       "flake": false,
       "locked": {
@@ -254,7 +242,6 @@
         "nixos-raspberrypi": "nixos-raspberrypi",
         "nixpkgs": "nixpkgs",
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
-        "nixpkgs-patch-fix-git-cross": "nixpkgs-patch-fix-git-cross",
         "nixpkgs-patch-fix-matter-server": "nixpkgs-patch-fix-matter-server",
         "nixpkgs-patch-fix-mypy": "nixpkgs-patch-fix-mypy",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
