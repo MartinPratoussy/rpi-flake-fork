@@ -18,10 +18,6 @@
       url = "https://github.com/FlashOnFire/nixpkgs/commit/2a7cb5dbf9d2.patch";
       flake = false;
     };
-    nixpkgs-patch-fix-mypy = {
-      url = "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch";
-      flake = false;
-    };
 
     # Depends on mypy patch and needs rework
     nixpkgs-patch-fix-python-hass-chip-wheels = {
@@ -30,6 +26,10 @@
     };
 
     # In PR
+    nixpkgs-patch-fix-mypy = {
+      url = "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch";
+      flake = false;
+    };
     nixpkgs-patch-add-oxicloud-module = {
       url = "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch";
       flake = false;
