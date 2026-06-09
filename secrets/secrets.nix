@@ -40,4 +40,5 @@ mkSecret [
   "oxicloud/env"
   "hass/secrets"
   "matrix/shared_secret"
+  "ntfy/users"
 ]

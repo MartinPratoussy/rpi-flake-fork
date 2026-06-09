@@ -305,5 +305,9 @@ in
 
       import custom_reverse_proxy localhost:8082
     '';
+
+    virtualHosts."https://ntfy.${_domain_base}".extraConfig = ''
+      import custom_reverse_proxy localhost:8084
+    '';
   };
 }

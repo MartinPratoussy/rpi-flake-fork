@@ -21,5 +21,6 @@
     ./matter.nix
     ./anubis.nix
     ./gatus.nix
+    ./ntfy.nix
   ];
 }
