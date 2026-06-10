@@ -43,6 +43,12 @@ in
           conditions = httpUp;
         }
         {
+          name = "Ntfy";
+          group = "core";
+          url = "https://ntfy.${_domain_base}/v1/health";
+          conditions = httpOk;
+        }
+        {
           name = "Forgejo";
           group = "apps";
           url = "http://127.0.0.1:3004/api/healthz";
