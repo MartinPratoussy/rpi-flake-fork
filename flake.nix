@@ -15,7 +15,7 @@
 
     # Ready to upstream
     nixpkgs-patch-fix-matter-server = {
-      url = "https://github.com/FlashOnFire/nixpkgs/commit/2a7cb5dbf9d2.patch";
+      url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
       flake = false;
     };
 
