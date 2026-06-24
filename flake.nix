@@ -35,8 +35,12 @@
       url = "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch";
       flake = false;
     };
+    nixpkgs-patch-aaaaaaa-update-oxicloud = {
+      url = "https://github.com/NixOS/nixpkgs/pull/534863.patch";
+      flake = false;
+    };
     nixpkgs-patch-fix-oxicloud-cross = {
-      url = "https://github.com/FlashOnFire/nixpkgs/commit/3731a27f20d3.patch";
+      url = "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch";
       flake = false;
     };
 
