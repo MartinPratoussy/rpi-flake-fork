@@ -44,6 +44,11 @@
       flake = false;
     };
 
+    nixpkgs-patch-mas-credentials = {
+      url = "https://github.com/NixOS/nixpkgs/pull/537261.patch";
+      flake = false;
+    };
+
     agenix = {
       url = "github:ryantm/agenix";
       inputs = {
