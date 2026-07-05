@@ -231,18 +231,6 @@
         "url": "https://github.com/flashonfire/nixpkgs/commit/53cc657f8cf5a91f01bc3e5257ac8cc0fbaf8bb2.patch"
       }
     },
-    "nixpkgs-patch-mas-credentials": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-vGwQZithiZgZ+TRmQfd2NbzWkPcpIycAaFqPPK7kOe4=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/537261.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/537261.patch"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1781789965,
@@ -270,7 +258,6 @@
         "nixpkgs-patch-fix-mypy": "nixpkgs-patch-fix-mypy",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
         "nixpkgs-patch-fix-python-hass-chip-wheels": "nixpkgs-patch-fix-python-hass-chip-wheels",
-        "nixpkgs-patch-mas-credentials": "nixpkgs-patch-mas-credentials",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "systems": "systems_2"
       }
