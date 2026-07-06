@@ -162,7 +162,7 @@
     "nixpkgs-patch-aaaaaaa-update-oxicloud": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-2Ld1t6EsNogRBrlUHSWUKPq5XyjdPuYMZN1J3hRXbzA=",
+        "narHash": "sha256-e3G8Tcq7Iz7Hyl/VhOR09bD8P+CyhUdbrSo7GnzBueM=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/534863.patch"
       },
