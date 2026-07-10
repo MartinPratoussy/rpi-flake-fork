@@ -13,27 +13,27 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    # Merged in staging
+    # Merged in master
     nixpkgs-patch-fix-mypy = {
       url = "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch";
       flake = false;
     };
 
     # In PR
-    nixpkgs-patch-aaaaaaa-update-oxicloud = {
-      url = "https://github.com/NixOS/nixpkgs/pull/534863.patch";
+    nixpkgs-patch-fix-python-orjson-cross = {
+      url = "https://github.com/flashonfire/nixpkgs/commit/5a72a8a0ff1a34d67badcb28cc497f12225c59d1.patch";
       flake = false;
     };
 
-    # In draft PR, depends on mypy patch
+    # In draft PR, depends on orjson patch
     nixpkgs-patch-fix-matter-server = {
       url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
       flake = false;
     };
 
-    # Depends on mypy patch and needs rework
     nixpkgs-patch-fix-python-hass-chip-wheels = {
-      url = "https://github.com/flashonfire/nixpkgs/commit/53cc657f8cf5a91f01bc3e5257ac8cc0fbaf8bb2.patch";
+      # Needs rework
+      url = "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch";
       flake = false;
     };
 
@@ -44,6 +44,11 @@
     };
     nixpkgs-patch-fix-oxicloud-cross = {
       url = "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch";
+      flake = false;
+    };
+
+    nixpkgs-patch-fix-systemd-cross = {
+      url = "https://github.com/NixOS/nixpkgs/pull/540766.patch";
       flake = false;
     };
 
