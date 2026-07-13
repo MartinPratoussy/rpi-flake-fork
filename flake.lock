@@ -236,11 +236,11 @@
       "locked": {
         "narHash": "sha256-JecsJc1wSt36KmASZf5z2aNyXBciuPGWTMp+TG5NQ/k=",
         "type": "file",
-        "url": "https://github.com/flashonfire/nixpkgs/commit/5a72a8a0ff1a34d67badcb28cc497f12225c59d1.patch"
+        "url": "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/flashonfire/nixpkgs/commit/5a72a8a0ff1a34d67badcb28cc497f12225c59d1.patch"
+        "url": "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch"
       }
     },
     "nixpkgs-patch-fix-systemd-cross": {
