@@ -222,7 +222,7 @@
     "nixpkgs-patch-fix-python-hass-chip-wheels": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-BENsmlr6REGEt982xkz4cJ2yGBgfJqevi1FLfFibSR4=",
+        "narHash": "sha256-pJn+IMO8Le0p5Ll8eFEFWxv8Z30PhlwGzbgW/k6cVwg=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
       },
