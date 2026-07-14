@@ -159,18 +159,6 @@
         "type": "indirect"
       }
     },
-    "nixpkgs-patch-aaa-oxicloud-update": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-XRxXdhOzIQ/hRmsx8yYevXd2bTOFjGrfkH9V9xEyQ84=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/540957.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/540957.patch"
-      }
-    },
     "nixpkgs-patch-add-oxicloud-module": {
       "flake": false,
       "locked": {
@@ -276,7 +264,6 @@
         "flake-parts": "flake-parts",
         "nixos-raspberrypi": "nixos-raspberrypi",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-patch-aaa-oxicloud-update": "nixpkgs-patch-aaa-oxicloud-update",
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
         "nixpkgs-patch-fix-matter-server": "nixpkgs-patch-fix-matter-server",
         "nixpkgs-patch-fix-mypy": "nixpkgs-patch-fix-mypy",
