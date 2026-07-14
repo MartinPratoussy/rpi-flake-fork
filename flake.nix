@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "nixpkgs/nixos-unstable-small";
     nixos-raspberrypi = {
       url = "github:nvmd/nixos-raspberrypi/develop"; # to be reverted once f8a380d59aa24313df6a290d3e0aac5dd8347aaa is merged in main
       inputs.nixpkgs.follows = "nixpkgs";
