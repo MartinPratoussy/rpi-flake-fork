@@ -21,7 +21,7 @@
 
     # In PR
     nixpkgs-patch-fix-python-orjson-cross = {
-      url = "https://github.com/flashonfire/nixpkgs/commit/5a72a8a0ff1a34d67badcb28cc497f12225c59d1.patch";
+      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch";
       flake = false;
     };
 
