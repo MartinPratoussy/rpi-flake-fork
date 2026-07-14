@@ -99,6 +99,7 @@
               in
               {
                 nixpkgs.buildPlatform = "x86_64-linux";
+                # nixpkgs.config.contentAddressedByDefault = true;
 
                 nixpkgs.overlays = [
                   (final: prev: {
