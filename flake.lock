@@ -183,18 +183,6 @@
         "url": "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch"
       }
     },
-    "nixpkgs-patch-fix-mypy": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-JRIl4spEOQn7rtdKKSm64IuFY6t1WV0iZ4fBipoNBlk=",
-        "type": "file",
-        "url": "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch"
-      }
-    },
     "nixpkgs-patch-fix-oxicloud-cross": {
       "flake": false,
       "locked": {
@@ -217,30 +205,6 @@
       "original": {
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
-      }
-    },
-    "nixpkgs-patch-fix-python-orjson-cross": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-JecsJc1wSt36KmASZf5z2aNyXBciuPGWTMp+TG5NQ/k=",
-        "type": "file",
-        "url": "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch"
-      }
-    },
-    "nixpkgs-patch-fix-systemd-cross": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-QfJb2Tm7+ZsnEStVILV/ZL+iOr13dSfqbAOyXC+VQig=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/540766.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/540766.patch"
       }
     },
     "nixpkgs-patcher": {
@@ -266,11 +230,8 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
         "nixpkgs-patch-fix-matter-server": "nixpkgs-patch-fix-matter-server",
-        "nixpkgs-patch-fix-mypy": "nixpkgs-patch-fix-mypy",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
         "nixpkgs-patch-fix-python-hass-chip-wheels": "nixpkgs-patch-fix-python-hass-chip-wheels",
-        "nixpkgs-patch-fix-python-orjson-cross": "nixpkgs-patch-fix-python-orjson-cross",
-        "nixpkgs-patch-fix-systemd-cross": "nixpkgs-patch-fix-systemd-cross",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "systems": "systems_2"
       }

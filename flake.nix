@@ -13,18 +13,6 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    # Merged in master
-    nixpkgs-patch-fix-mypy = {
-      url = "https://github.com/FlashOnFire/nixpkgs/commit/f4bc8453464ac0238fc43967d53ab600396d8674.patch";
-      flake = false;
-    };
-
-    # In PR
-    nixpkgs-patch-fix-python-orjson-cross = {
-      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/539851.patch";
-      flake = false;
-    };
-
     # In draft PR, depends on orjson patch
     nixpkgs-patch-fix-matter-server = {
       url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
@@ -44,11 +32,6 @@
     };
     nixpkgs-patch-fix-oxicloud-cross = {
       url = "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch";
-      flake = false;
-    };
-
-    nixpkgs-patch-fix-systemd-cross = {
-      url = "https://github.com/NixOS/nixpkgs/pull/540766.patch";
       flake = false;
     };
 
