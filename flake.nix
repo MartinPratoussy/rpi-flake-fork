@@ -13,14 +13,22 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    # In draft PR, depends on orjson patch
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        darwin.follows = "";
+      };
+    };
+
+    # In draft PR, depends on hass chip wheels
     nixpkgs-patch-fix-matter-server = {
       url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
       flake = false;
     };
 
+    # Needs rework
     nixpkgs-patch-fix-python-hass-chip-wheels = {
-      # Needs rework
       url = "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch";
       flake = false;
     };
@@ -33,14 +41,6 @@
     nixpkgs-patch-fix-oxicloud-cross = {
       url = "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch";
       flake = false;
-    };
-
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        darwin.follows = "";
-      };
     };
   };
 
