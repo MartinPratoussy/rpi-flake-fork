@@ -21,15 +21,15 @@
       };
     };
 
-    # In draft PR, depends on hass chip wheels
-    nixpkgs-patch-fix-matter-server = {
-      url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
+    # In PR
+    nixpkgs-patch-fix-python-hass-chip-wheels = {
+      url = "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch";
       flake = false;
     };
 
-    # Needs rework
-    nixpkgs-patch-fix-python-hass-chip-wheels = {
-      url = "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch";
+    # In draft PR, depends on hass chip wheels
+    nixpkgs-patch-fix-matter-server = {
+      url = "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch";
       flake = false;
     };
 
@@ -98,8 +98,6 @@
                     gdb = nativeAarch64Pkgs.gdb;
 
                     # Speed up compilation by leveraging cache
-                    kitty = nativeAarch64Pkgs.kitty;
-                    vaultwarden = nativeAarch64Pkgs.vaultwarden;
                     forgejo = nativeAarch64Pkgs.forgejo;
                     adguardhome = nativeAarch64Pkgs.adguardhome;
                     cinny = nativeAarch64Pkgs.cinny;

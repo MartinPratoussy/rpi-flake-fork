@@ -42,9 +42,11 @@
   environment.systemPackages = with pkgs; [
     btop
     wget
-    kitty.terminfo
     ripgrep
     fd
+
+    # kitty does not cross compile
+    pkgsBuildBuild.kitty.terminfo
   ];
 
   programs.atop.enable = true;
