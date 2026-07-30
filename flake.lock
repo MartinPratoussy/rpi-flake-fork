@@ -147,11 +147,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1785307242,
-        "narHash": "sha256-of9OQuw0E5/6yd7ab4ue7uVYoXT8+pTfKhCfRApzuco=",
-        "rev": "255d738cbacb7f30ac8629e091538c4382841ac5",
+        "lastModified": 1785382966,
+        "narHash": "sha256-Mjs70Am3u0VAsQYyysDV8gAZbkldZDwbsRsg4aXeVYk=",
+        "rev": "ba889d5db7c07eaf5cb8f37835d447d935c51b21",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1043549.255d738cbacb/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1044224.ba889d5db7c0/nixexprs.tar.xz"
       },
       "original": {
         "id": "nixpkgs",
@@ -162,7 +162,7 @@
     "nixpkgs-patch-add-oxicloud-module": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-6U0dre7pr9+0vGZlnIkoDTw3rPt9IgFilcwdhWE3684=",
+        "narHash": "sha256-Q9ztqDttwFjJOQsbQKZRx9YldNYnyFXL8Oedxqqavgs=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch"
       },
@@ -174,7 +174,7 @@
     "nixpkgs-patch-fix-matter-server": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-ABmVdX5ZUWabtpRFl3Sv+Pa4kcyBV8pZcZG4hBGsjvI=",
+        "narHash": "sha256-lqRY9xekvCpyfjKlCb8rToLPV5hqoDZsoXUqqDAIbxc=",
         "type": "file",
         "url": "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch"
       },
@@ -198,7 +198,7 @@
     "nixpkgs-patch-fix-python-hass-chip-wheels": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-BENsmlr6REGEt982xkz4cJ2yGBgfJqevi1FLfFibSR4=",
+        "narHash": "sha256-pJn+IMO8Le0p5Ll8eFEFWxv8Z30PhlwGzbgW/k6cVwg=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
       },
