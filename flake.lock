@@ -183,6 +183,18 @@
         "url": "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch"
       }
     },
+    "nixpkgs-patch-fix-mautrix-instagram": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Ip1yHv07jbgx3Vfw7qwt30tSJSTOna0qapbxKhpNbQY=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/549465.patch"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/549465.patch"
+      }
+    },
     "nixpkgs-patch-fix-oxicloud-cross": {
       "flake": false,
       "locked": {
@@ -230,6 +242,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
         "nixpkgs-patch-fix-matter-server": "nixpkgs-patch-fix-matter-server",
+        "nixpkgs-patch-fix-mautrix-instagram": "nixpkgs-patch-fix-mautrix-instagram",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
         "nixpkgs-patch-fix-python-hass-chip-wheels": "nixpkgs-patch-fix-python-hass-chip-wheels",
         "nixpkgs-patcher": "nixpkgs-patcher",
