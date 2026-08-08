@@ -147,11 +147,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1785925688,
-        "narHash": "sha256-9FpHdGLfpD62Zj0bUpgov5Pz/muPsVDBu18sUGH4Cio=",
-        "rev": "379e2fc6c7612f7341d941ae4d1ea38021c41d6e",
+        "lastModified": 1786204308,
+        "narHash": "sha256-9VVWR7QCI8X/lEKStbp360/Ay9+Byl4TIMm1nE5jm8I=",
+        "rev": "508359b3ad6abb6d4f674e473a4870fc4d9da2ba",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1048287.379e2fc6c761/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1050043.508359b3ad6a/nixexprs.tar.xz"
       },
       "original": {
         "id": "nixpkgs",
@@ -162,7 +162,7 @@
     "nixpkgs-patch-add-oxicloud-module": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-6U0dre7pr9+0vGZlnIkoDTw3rPt9IgFilcwdhWE3684=",
+        "narHash": "sha256-Q9ztqDttwFjJOQsbQKZRx9YldNYnyFXL8Oedxqqavgs=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch"
       },
@@ -174,7 +174,7 @@
     "nixpkgs-patch-fix-matter-server": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-ABmVdX5ZUWabtpRFl3Sv+Pa4kcyBV8pZcZG4hBGsjvI=",
+        "narHash": "sha256-lqRY9xekvCpyfjKlCb8rToLPV5hqoDZsoXUqqDAIbxc=",
         "type": "file",
         "url": "https://github.com/FlashOnFire/nixpkgs/commit/61e6484122b2d531f127ab7c05a407a95b1c4a4b.patch"
       },
@@ -186,7 +186,7 @@
     "nixpkgs-patch-fix-mautrix-instagram": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-Ip1yHv07jbgx3Vfw7qwt30tSJSTOna0qapbxKhpNbQY=",
+        "narHash": "sha256-0GJnWzNBAqL+3s8fKjNGXUfLV330ZkN5CrvXy4Mx9ZA=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/549465.patch"
       },
@@ -210,7 +210,7 @@
     "nixpkgs-patch-fix-python-hass-chip-wheels": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-BENsmlr6REGEt982xkz4cJ2yGBgfJqevi1FLfFibSR4=",
+        "narHash": "sha256-pJn+IMO8Le0p5Ll8eFEFWxv8Z30PhlwGzbgW/k6cVwg=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
       },
