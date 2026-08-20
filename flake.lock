@@ -195,18 +195,6 @@
         "url": "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch"
       }
     },
-    "nixpkgs-patch-fix-python-hass-chip-wheels": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-pJn+IMO8Le0p5Ll8eFEFWxv8Z30PhlwGzbgW/k6cVwg=",
-        "type": "file",
-        "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/flashonfire/nixpkgs/commit/48fbb242197174d1005d20bb2d8e8f1ff72a2f2e.patch"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1786578629,
@@ -231,7 +219,6 @@
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
         "nixpkgs-patch-fix-matter-server": "nixpkgs-patch-fix-matter-server",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
-        "nixpkgs-patch-fix-python-hass-chip-wheels": "nixpkgs-patch-fix-python-hass-chip-wheels",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "systems": "systems_2"
       }
