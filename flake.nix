@@ -42,11 +42,6 @@
       url = "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch";
       flake = false;
     };
-
-    nixpkgs-patch-fix-mautrix-instagram = {
-      url = "https://github.com/NixOS/nixpkgs/pull/549465.patch";
-      flake = false;
-    };
   };
 
   outputs =
