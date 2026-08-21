@@ -35,7 +35,6 @@
     };
 
     groups."otbr-radio-socket" = { };
-    groups."otbr-socket" = { };
   };
 
   systemd.services.socat-otbr = {
@@ -59,19 +58,11 @@
     after = [ "socat-otbr.service" ];
     requires = [ "socat-otbr.service" ];
     serviceConfig = {
-      Group = "otbr-socket";
       SupplementaryGroups = [ "otbr-radio-socket" ];
-      ExecStartPost = "${pkgs.bash}/bin/bash -c 'for i in $(${pkgs.coreutils}/bin/seq 1 50); do if [ -S /run/openthread-wpan0.sock ]; then ${pkgs.coreutils}/bin/chgrp otbr-socket /run/openthread-wpan0.sock; ${pkgs.coreutils}/bin/chmod 770 /run/openthread-wpan0.sock; exit 0; fi; ${pkgs.coreutils}/bin/sleep 0.1; done; exit 0'";
       ReadWritePaths = [
         "/run/otbr"
       ];
     };
   };
 
-  systemd.services.otbr-web = {
-    serviceConfig = {
-      PrivateUsers = lib.mkForce false;
-      SupplementaryGroups = [ "otbr-socket" ];
-    };
-  };
 }
