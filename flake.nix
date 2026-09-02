@@ -79,7 +79,7 @@
                     postgresql = nativeAarch64Pkgs.postgresql;
 
                     # These do not cross compile
-                    atop = nativeAarch64Pkgs.atop;
+                    # atop = nativeAarch64Pkgs.atop;
                     openblas = nativeAarch64Pkgs.openblas;
                     anubis = nativeAarch64Pkgs.anubis;
                     redis = nativeAarch64Pkgs.redis;
