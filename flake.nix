@@ -80,16 +80,12 @@
                     postgresql = nativeAarch64Pkgs.postgresql;
 
                     # These do not cross compile
-                    # atop = nativeAarch64Pkgs.atop;
                     openblas = nativeAarch64Pkgs.openblas;
                     anubis = nativeAarch64Pkgs.anubis;
                     redis = nativeAarch64Pkgs.redis;
-                    gdb = nativeAarch64Pkgs.gdb;
 
                     # Speed up compilation by leveraging cache
-                    forgejo = nativeAarch64Pkgs.forgejo;
                     adguardhome = nativeAarch64Pkgs.adguardhome;
-                    cinny = nativeAarch64Pkgs.cinny;
                   })
                 ];
               }
