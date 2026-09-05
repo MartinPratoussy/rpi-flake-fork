@@ -4,6 +4,7 @@
 {
   imports = [
     ./matrix
+    ./finance
 
     ./adguard.nix
     ./openssh.nix

@@ -309,5 +309,21 @@ in
     virtualHosts."https://ntfy.${_domain_base}".extraConfig = ''
       import custom_reverse_proxy localhost:8084
     '';
+
+    virtualHosts."https://wealthfolio.${_domain_base}".extraConfig = ''
+      import authelia_auth
+      import common
+      import default_permissions
+
+      import custom_reverse_proxy localhost:8088
+    '';
+
+    virtualHosts."https://sure.${_domain_base}".extraConfig = ''
+      import common
+      import default_permissions
+
+      import custom_reverse_proxy localhost:3002
+    '';
+
   };
 }

@@ -13,6 +13,10 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
+    sure-nix = {
+      url = "github:nSimonFR/sure-nix";
+    };
+
     agenix = {
       url = "github:ryantm/agenix";
       inputs = {
@@ -37,6 +41,7 @@
       flake-parts,
       agenix,
       nixpkgs-patcher,
+      sure-nix,
       ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -61,6 +66,12 @@
                 nativeAarch64Pkgs = import inputs.nixpkgs {
                   system = "aarch64-linux";
                   config = config.nixpkgs.config;
+                  overlays = [
+
+                    (final: prev: {
+                      sure = sure-nix.packages.aarch64-linux.sure;
+                    })
+                  ];
                 };
               in
               {
@@ -83,6 +94,7 @@
                     openblas = nativeAarch64Pkgs.openblas;
                     anubis = nativeAarch64Pkgs.anubis;
                     redis = nativeAarch64Pkgs.redis;
+                    sure = nativeAarch64Pkgs.sure;
 
                     # Speed up compilation by leveraging cache
                     adguardhome = nativeAarch64Pkgs.adguardhome;

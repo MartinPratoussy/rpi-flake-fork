@@ -41,4 +41,6 @@ mkSecret [
   "hass/secrets"
   "matrix/shared_secret"
   "ntfy/users"
+  "wealthfolio/secret-key"
+  "sure/env"
 ]
