@@ -168,11 +168,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1788555391,
-        "narHash": "sha256-u81PpEteOPrks3EtR9VPSjKxxOeBdZ2yNu/vXJXRRCI=",
-        "rev": "8a37cfb926b31472f2e90b992c197c62d6bb4d74",
+        "lastModified": 1789759687,
+        "narHash": "sha256-2/X5gH0rmVIekqHYu8UqlhgsjZFM+lWrHghvleURg+M=",
+        "rev": "14349b9a53acb92d4d738c182a2e52eb3b628ada",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1067581.8a37cfb926b3/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1075951.14349b9a53ac/nixexprs.tar.zst"
       },
       "original": {
         "id": "nixpkgs",
@@ -183,7 +183,7 @@
     "nixpkgs-patch-add-oxicloud-module": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-6U0dre7pr9+0vGZlnIkoDTw3rPt9IgFilcwdhWE3684=",
+        "narHash": "sha256-Q9ztqDttwFjJOQsbQKZRx9YldNYnyFXL8Oedxqqavgs=",
         "type": "file",
         "url": "https://github.com/flashonfire/nixpkgs/commit/06217a4eccbd.patch"
       },
@@ -206,11 +206,11 @@
     },
     "nixpkgs-patcher": {
       "locked": {
-        "lastModified": 1787266535,
-        "narHash": "sha256-uvnBghsG8XzMEwW8PH2GnPQRBOxQEyHi6OEMmkx5GSY=",
+        "lastModified": 1789143781,
+        "narHash": "sha256-WFr3wYdhSEJd/nQyJuETd6dcS08Exc+qoZWJ2tHM/gg=",
         "owner": "gepbird",
         "repo": "nixpkgs-patcher",
-        "rev": "5f1edc3a7b554c2ddef7e2a79af97dec707c825a",
+        "rev": "da7c09e478f552c3a9ebb78b2f68426c1855fd81",
         "type": "github"
       },
       "original": {
