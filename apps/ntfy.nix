@@ -10,10 +10,6 @@ let
     secrets = [
       "ntfy/users"
     ];
-    extra = {
-      owner = "ntfy-sh";
-      group = "ntfy-sh";
-    };
   };
 in
 {
