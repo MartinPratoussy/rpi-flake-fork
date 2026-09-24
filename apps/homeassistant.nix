@@ -75,6 +75,109 @@ in
           admin = "owner";
         };
       };
+
+      automation = [
+        {
+          id = "dimmer_chambre_ampoule_aqara";
+          alias = "Dimmer chambre -> Ampoule Aqara";
+          triggers = [
+            {
+              trigger = "state";
+              entity_id = "event.dimmer_chambre_action";
+              attribute = "event_type";
+              to = "single";
+              id = "toggle";
+            }
+            {
+              trigger = "state";
+              entity_id = "event.dimmer_chambre_action";
+              attribute = "event_type";
+              to = "double";
+              id = "full_bright";
+            }
+            {
+              trigger = "state";
+              entity_id = "event.dimmer_chambre_action";
+              attribute = "event_type";
+              to = "hold";
+              id = "turn_off";
+            }
+            {
+              trigger = "state";
+              entity_id = "event.dimmer_chambre_action";
+              attribute = "event_type";
+              to = "rotation";
+              id = "dim";
+            }
+          ];
+          conditions = [ ];
+          actions = [
+            {
+              choose = [
+                {
+                  conditions = [
+                    {
+                      condition = "trigger";
+                      id = "toggle";
+                    }
+                  ];
+                  sequence = [
+                    {
+                      action = "light.toggle";
+                      target.entity_id = "light.led_bulb_t2_e27_rgb_cct";
+                    }
+                  ];
+                }
+                {
+                  conditions = [
+                    {
+                      condition = "trigger";
+                      id = "full_bright";
+                    }
+                  ];
+                  sequence = [
+                    {
+                      action = "light.turn_on";
+                      target.entity_id = "light.led_bulb_t2_e27_rgb_cct";
+                      data.brightness_pct = 100;
+                    }
+                  ];
+                }
+                {
+                  conditions = [
+                    {
+                      condition = "trigger";
+                      id = "turn_off";
+                    }
+                  ];
+                  sequence = [
+                    {
+                      action = "light.turn_off";
+                      target.entity_id = "light.led_bulb_t2_e27_rgb_cct";
+                    }
+                  ];
+                }
+                {
+                  conditions = [
+                    {
+                      condition = "trigger";
+                      id = "dim";
+                    }
+                  ];
+                  sequence = [
+                    {
+                      action = "light.turn_on";
+                      target.entity_id = "light.led_bulb_t2_e27_rgb_cct";
+                      data.brightness_step_pct = "{{ states('sensor.0x54ef44100123fe40_action_rotation_percent_speed') | float(0) | round(0) }}";
+                    }
+                  ];
+                }
+              ];
+            }
+          ];
+          mode = "restart";
+        }
+      ];
     };
   };
 
