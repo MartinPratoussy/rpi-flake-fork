@@ -49,7 +49,6 @@
     pkgsBuildBuild.kitty.terminfo
   ];
 
-  programs.atop.enable = true;
   programs.git.enable = true;
   virtualisation.docker.enable = true;
 
