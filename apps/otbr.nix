@@ -1,5 +1,7 @@
-{ lib, pkgs, ... }:
+{ pkgs, ... }:
 {
+  services.avahi.enable = true;
+
   services.openthread-border-router = {
     enable = true;
 

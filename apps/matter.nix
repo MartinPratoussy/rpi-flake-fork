@@ -1,7 +1,6 @@
 { ... }:
 {
-  services.matter-server = {
+  services.matterjs-server = {
     enable = true;
-    extraArgs = { };
   };
 }
