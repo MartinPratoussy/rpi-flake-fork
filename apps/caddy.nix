@@ -306,6 +306,12 @@ in
       import custom_reverse_proxy localhost:8082
     '';
 
+    virtualHosts."https://z2m.${_domain_base}".extraConfig = ''
+      import authelia_auth
+
+      import custom_reverse_proxy localhost:8099
+    '';
+
     virtualHosts."https://ntfy.${_domain_base}".extraConfig = ''
       import custom_reverse_proxy localhost:8084
     '';

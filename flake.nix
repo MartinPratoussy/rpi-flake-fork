@@ -95,6 +95,7 @@
                     anubis = nativeAarch64Pkgs.anubis;
                     redis = nativeAarch64Pkgs.redis;
                     sure = nativeAarch64Pkgs.sure;
+                    zigbee2mqtt = nativeAarch64Pkgs.zigbee2mqtt; # Compiles but wrong arch
 
                     # Speed up compilation by leveraging cache
                     adguardhome = nativeAarch64Pkgs.adguardhome;

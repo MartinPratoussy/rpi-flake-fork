@@ -182,6 +182,14 @@ in
             }
 
             {
+              domain = "z2m.${_domain_base}";
+              policy = "two_factor";
+              subject = [
+                "group:owner"
+              ];
+            }
+
+            {
               domain = "wealthfolio.${_domain_base}";
               policy = "two_factor";
               subject = [

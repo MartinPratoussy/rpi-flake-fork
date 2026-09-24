@@ -20,6 +20,7 @@
     ./oxicloud.nix
     ./otbr.nix
     ./matter.nix
+    ./zigbee2mqtt.nix
     ./anubis.nix
     ./gatus.nix
     ./ntfy.nix

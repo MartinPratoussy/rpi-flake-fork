@@ -38,6 +38,7 @@ in
       "matter"
       "otbr"
       "thread"
+      "mqtt"
     ];
 
     customComponents = with pkgs.home-assistant-custom-components; [
