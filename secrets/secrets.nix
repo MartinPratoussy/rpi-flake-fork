@@ -43,4 +43,5 @@ mkSecret [
   "ntfy/users"
   "wealthfolio/secret-key"
   "sure/env"
+  "ddclient/dynhost-password"
 ]

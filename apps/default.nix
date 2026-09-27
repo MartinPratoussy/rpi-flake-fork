@@ -24,5 +24,6 @@
     ./anubis.nix
     ./gatus.nix
     ./ntfy.nix
+    ./ddclient.nix
   ];
 }
