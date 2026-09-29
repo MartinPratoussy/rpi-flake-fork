@@ -46,7 +46,7 @@ in
         "github.com/mholt/caddy-ratelimit@v0.1.0"
         "github.com/mholt/caddy-l4@v0.1.0"
       ];
-      hash = "sha256-+KZWqbBrGcN1k4DVZLxCaSKoYWHpJ3y3vYqpdkRl9Lg=";
+      hash = "sha256-NrAg2NDhsc2N56pHzdMDb7kBC60akjY6iRYG0h6okpU=";
     };
 
     enableReload = false;
