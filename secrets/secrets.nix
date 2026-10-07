@@ -44,4 +44,5 @@ mkSecret [
   "wealthfolio/secret-key"
   "sure/env"
   "ddclient/dynhost-password"
+  "anki/flashonfire"
 ]

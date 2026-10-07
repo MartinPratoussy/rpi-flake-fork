@@ -331,5 +331,12 @@ in
       import custom_reverse_proxy localhost:3002
     '';
 
+    virtualHosts."https://anki.${_domain_base}".extraConfig = ''
+      reverse_proxy http://[::1]:27701 {
+        transport http {
+          read_buffer 512k
+        }
+      }
+    '';
   };
 }

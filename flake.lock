@@ -180,18 +180,6 @@
         "url": "https://github.com/flashonfire/nixpkgs/commit/f709b04c26ce.patch"
       }
     },
-    "nixpkgs-patch-music-assistant": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-dai1XlzmE811M479ZmydypqZSySksIDW2bnP4Rx7eac=",
-        "type": "file",
-        "url": "https://github.com/nixOS/nixpkgs/pull/564869.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/nixOS/nixpkgs/pull/564869.patch"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1789143781,
@@ -231,7 +219,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-patch-add-oxicloud-module": "nixpkgs-patch-add-oxicloud-module",
         "nixpkgs-patch-fix-oxicloud-cross": "nixpkgs-patch-fix-oxicloud-cross",
-        "nixpkgs-patch-music-assistant": "nixpkgs-patch-music-assistant",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "sure-nix": "sure-nix",
         "systems": "systems"

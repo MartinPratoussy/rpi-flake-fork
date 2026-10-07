@@ -25,5 +25,6 @@
     ./gatus.nix
     ./ntfy.nix
     ./ddclient.nix
+    ./anki.nix
   ];
 }
