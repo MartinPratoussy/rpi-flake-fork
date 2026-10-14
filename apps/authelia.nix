@@ -292,6 +292,7 @@ in
                   policy = "two_factor";
                   subject = [
                     "group:owner"
+                    "group:oxicloud"
                   ];
                 }
               ];
