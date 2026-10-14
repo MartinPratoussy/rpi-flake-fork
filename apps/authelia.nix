@@ -289,7 +289,7 @@ in
               default_policy = "deny";
               rules = [
                 {
-                  policy = "two_factor";
+                  policy = "one_factor";
                   subject = [
                     "group:owner"
                     "group:oxicloud"
