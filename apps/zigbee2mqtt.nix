@@ -31,6 +31,13 @@
           friendly_name = "Dimmer Chambre";
           operation_mode = "decoupled";
           power_on_behavior = "on";
+          min_brightness = 0;
+          max_brightness = 100;
+          sensitivity = "medium";
+          multi_click = false;
+        };
+        "0xf044d3fffe5cb303" = {
+          friendly_name = "Température/Humidité Chambre";
         };
       };
     };
