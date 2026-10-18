@@ -26,5 +26,6 @@
     ./ntfy.nix
     ./ddclient.nix
     ./anki.nix
+    ./paperless.nix
   ];
 }
