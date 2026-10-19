@@ -112,18 +112,20 @@ in
       stateDir = "/storage/forgejo";
     };
 
-    gitea-actions-runner = {
+    forgejo-runner = {
       package = pkgs.forgejo-runner;
       instances.lithium = {
         enable = true;
-        name = "lithium-runner";
-        url = "https://${domain}/";
-        tokenFile = secrets.get "forgejo-runner-token";
-        labels = [
-          "docker:docker://node:24-alpine"
-          "alpine-latest:docker://node:24-alpine"
-          "ubuntu-latest:docker://catthehacker/ubuntu:act-latest"
-        ];
+
+        secrets = {
+          server.connections.default = {
+            token_url = secrets.get "forgejo-runner-token";
+          };
+
+          cache = {
+            secret_url = "/run/keys/forgejo-runner_cache-secret";
+          };
+        };
 
         settings = {
           log.level = "info";
@@ -132,6 +134,18 @@ in
             capacity = 2;
             timeout = "5h";
             insecure = false;
+
+            labels = [
+              "docker:docker://node:24-alpine"
+              "alpine-latest:docker://node:24-alpine"
+              "ubuntu-latest:docker://catthehacker/ubuntu:act-latest"
+            ];
+          };
+          server.connections = {
+            default = {
+              url = "https://${domain}/";
+              uuid = "027c4978-432b-442d-b23a-5a78549f7e48";
+            };
           };
           session.COOKIE_SECURE = true;
         };
@@ -141,36 +155,41 @@ in
 
   systemd.services = {
     # Auto register OIDC
-    forgejo.preStart = ''
-      auth="${lib.getExe config.services.forgejo.package} admin auth"
+    forgejo = {
+      wants = [ "authelia-main.service" ];
+      after = [ "authelia-main.service" ];
 
-      echo "Trying to find existing SSO configuration"
-      set +e -o pipefail
-      id="$($auth list | grep "authelia.*OAuth2" |  cut -d'	' -f1)"
-      found=$?
-      set -e +o pipefail
+      preStart = ''
+        auth="${lib.getExe config.services.forgejo.package} admin auth"
 
-      if [[ $found = 0 ]]; then
-        echo Found sso configuration at id=$id, updating it
-        $auth update-oauth \
-          --id       $id \
-          --name     authelia \
-          --provider openidConnect \
-          --key      SvETHomqH_6hOoZVLqZhKABkrkEMCJmltIOV8At-dznHOZyPDeG8stGCN_M5R0Ipy1wN2cBO \
-          --secret   $(tr -d '\n' < ${secrets.get "forgejo-oidc-shared-secret"}) \
-          --auto-discover-url https://auth.${_domain_base}/.well-known/openid-configuration \
-          --scopes='openid email profile groups'
-      else
-        echo Did not find any SSO configuration, creating one
-        $auth add-oauth \
-          --name     authelia \
-          --provider openidConnect \
-          --key      SvETHomqH_6hOoZVLqZhKABkrkEMCJmltIOV8At-dznHOZyPDeG8stGCN_M5R0Ipy1wN2cBO \
-          --secret   $(tr -d '\n' < ${secrets.get "forgejo-oidc-shared-secret"}) \
-          --auto-discover-url https://auth.${_domain_base}/.well-known/openid-configuration \
-          --scopes='openid email profile groups'
-      fi
-    '';
+        echo "Trying to find existing SSO configuration"
+        set +e -o pipefail
+        id="$($auth list | grep "authelia.*OAuth2" |  cut -d'	' -f1)"
+        found=$?
+        set -e +o pipefail
+
+        if [[ $found = 0 ]]; then
+          echo Found sso configuration at id=$id, updating it
+          $auth update-oauth \
+            --id       $id \
+            --name     authelia \
+            --provider openidConnect \
+            --key      SvETHomqH_6hOoZVLqZhKABkrkEMCJmltIOV8At-dznHOZyPDeG8stGCN_M5R0Ipy1wN2cBO \
+            --secret   $(tr -d '\n' < ${secrets.get "forgejo-oidc-shared-secret"}) \
+            --auto-discover-url https://auth.${_domain_base}/.well-known/openid-configuration \
+            --scopes='openid email profile groups'
+        else
+          echo Did not find any SSO configuration, creating one
+          $auth add-oauth \
+            --name     authelia \
+            --provider openidConnect \
+            --key      SvETHomqH_6hOoZVLqZhKABkrkEMCJmltIOV8At-dznHOZyPDeG8stGCN_M5R0Ipy1wN2cBO \
+            --secret   $(tr -d '\n' < ${secrets.get "forgejo-oidc-shared-secret"}) \
+            --auto-discover-url https://auth.${_domain_base}/.well-known/openid-configuration \
+            --scopes='openid email profile groups'
+        fi
+      '';
+    };
 
     # Takes the form of "gitea-runner-<instance>"
     gitea-runner-lithium = {
