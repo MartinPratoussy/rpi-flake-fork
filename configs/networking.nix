@@ -75,4 +75,10 @@
   ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+
+  # fix for emudhra certs compromise
+  security.pki.caCertificateBlacklist = [
+    "Comodo AAA Services root"
+    "emSign ECC Root CA - G3"
+  ];
 }
