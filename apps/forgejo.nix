@@ -121,10 +121,6 @@ in
           server.connections.default = {
             token_url = secrets.get "forgejo-runner-token";
           };
-
-          cache = {
-            secret_url = "/run/keys/forgejo-runner_cache-secret";
-          };
         };
 
         settings = {
