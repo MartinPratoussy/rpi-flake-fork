@@ -87,7 +87,6 @@
                     postgresql = nativeAarch64Pkgs.postgresql;
 
                     # These do not cross compile
-                    openblas = nativeAarch64Pkgs.openblas;
                     anubis = nativeAarch64Pkgs.anubis;
                     redis = nativeAarch64Pkgs.redis;
                     sure = nativeAarch64Pkgs.sure;
