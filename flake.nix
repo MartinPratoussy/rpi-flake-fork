@@ -79,6 +79,7 @@
                   (final: prev: {
                     # Force immich and immich-machine-learning to compile natively (avoids segfault on thumbnail gen)
                     immich = nativeAarch64Pkgs.immich;
+                    immich-machine-learning = nativeAarch64Pkgs.immich-machine-learning;
 
                     # Required when using native immich
                     # vectorchord needs cross compile fix
