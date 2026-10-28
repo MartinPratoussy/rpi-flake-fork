@@ -331,6 +331,13 @@ in
       import custom_reverse_proxy localhost:3002
     '';
 
+    virtualHosts."https://cinematek.${_domain_base}".extraConfig = ''
+      import common
+      import default_permissions
+
+      import custom_reverse_proxy 127.0.0.1:8000
+    '';
+
     virtualHosts."https://anki.${_domain_base}".extraConfig = ''
       reverse_proxy http://[::1]:27701 {
         transport http {

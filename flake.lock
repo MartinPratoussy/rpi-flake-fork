@@ -92,6 +92,22 @@
         "type": "github"
       }
     },
+    "my-cinematek": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1792353924,
+        "narHash": "sha256-42crJYnzOfZpo9y1wsiI1GXfRu8A/kaDTC16ZyEEcjc=",
+        "owner": "MartinPratoussy",
+        "repo": "my-cinematek",
+        "rev": "84297456de57708eb589ed27b782702ce56d1335",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MartinPratoussy",
+        "repo": "my-cinematek",
+        "type": "github"
+      }
+    },
     "nixos-images": {
       "inputs": {
         "nixos-stable": [

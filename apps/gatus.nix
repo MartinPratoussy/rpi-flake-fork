@@ -85,6 +85,12 @@ in
           conditions = tcpOk;
         }
         {
+          name = "my-cinematek";
+          group = "apps";
+          url = "tcp://127.0.0.1:8000";
+          conditions = httpOk;
+        }
+        {
           name = "AdGuard";
           group = "infra";
           url = "http://127.0.0.1:3005/";

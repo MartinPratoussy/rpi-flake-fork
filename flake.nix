@@ -5,6 +5,12 @@
       url = "github:nvmd/nixos-raspberrypi/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    my-cinematek = {
+      url = "github.com:MartinPratoussy/my-cinematek";
+      flake = false;
+    };
+
     nixpkgs-patcher.url = "github:gepbird/nixpkgs-patcher";
 
     systems.url = "github:nix-systems/default";

@@ -27,5 +27,6 @@
     ./ddclient.nix
     ./anki.nix
     ./paperless.nix
+    ./my-cinematek.nix
   ];
 }
