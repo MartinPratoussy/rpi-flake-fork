@@ -64,6 +64,7 @@
     "rxrpc"
     "esp6"
     "esp4"
+    "mptcp"
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
