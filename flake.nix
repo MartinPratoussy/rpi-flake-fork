@@ -8,7 +8,7 @@
 
     my-cinematek = {
       url = "github.com:MartinPratoussy/my-cinematek";
-      flake = false;
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixpkgs-patcher.url = "github:gepbird/nixpkgs-patcher";
@@ -62,6 +62,7 @@
           modules = [
             ./configuration.nix
             agenix.nixosModules.default
+            inputs.my-cinematek.nixosModules.default
 
             (
               { config, ... }:

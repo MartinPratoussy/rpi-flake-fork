@@ -93,7 +93,11 @@
       }
     },
     "my-cinematek": {
-      "flake": false,
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
       "locked": {
         "lastModified": 1792353924,
         "narHash": "sha256-42crJYnzOfZpo9y1wsiI1GXfRu8A/kaDTC16ZyEEcjc=",
